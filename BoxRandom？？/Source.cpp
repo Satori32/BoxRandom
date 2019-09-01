@@ -11,6 +11,10 @@ int main() {
 	for (std::size_t i = 0; i < BR.Size(); i++) {
 		std::cout << BR.Get() << ',';
 	}
+	std::cout << std::endl;	
+	for (std::size_t i = 0; i < BR.Size(); i++) {
+		std::cout << BR() << ',';
+	}
 	std::cout << std::endl;
 	return 0;
 }

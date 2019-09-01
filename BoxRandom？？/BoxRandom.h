@@ -38,6 +38,10 @@ public:
 		return B.size();
 	}
 
+	std::size_t operator ()() {
+		return Get();
+	}
+
 protected:
 	typedef std::deque<std::size_t> Box;
 
